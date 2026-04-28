@@ -4,9 +4,9 @@
 
 This project combines experimentation analysis and time series forecasting into one business-focused workflow.
 
-The goal is to measure the impact of an A/B test on user purchase behavior, then connect that uplift to a revenue forecasting pipeline using real retail sales data. Instead of treating A/B testing and forecasting as separate exercises, this project links them into one decision-making system.
+The goal is to evaluate whether an A/B test variant improves purchase behavior, then translate that uplift into revenue forecasting scenarios using real store sales data. Instead of treating experimentation and forecasting as separate tasks, this project links them into one decision-support pipeline.
 
-This project is useful because real companies often need to answer both of these questions:
+This project is designed to answer two connected business questions:
 
 1. Did the experiment improve performance?
 2. If the experiment works, what does that imply for future revenue?
@@ -17,13 +17,18 @@ This project is useful because real companies often need to answer both of these
 
 The project has two connected parts:
 
-1. A/B testing analysis  
-   Evaluate whether the test variant performs better than the control variant using experiment funnel metrics.
+### A/B Testing Analysis
+Evaluate whether the test variant performs better than the control variant using funnel metrics and statistical testing.
 
-2. Revenue forecasting  
-   Forecast future sales using historical store sales data, promotions, transactions, oil prices, and calendar effects.
+### Revenue Forecasting
+Forecast future sales using historical store sales data, promotions, transactions, oil prices, holidays, and calendar effects.
 
-The final goal is to use experiment uplift as an input into future revenue scenario analysis.
+### Scenario Translation
+Use experiment uplift as an input into future revenue scenarios:
+1. control
+2. conservative uplift
+3. base uplift
+4. optimistic uplift
 
 ---
 
@@ -87,7 +92,7 @@ revenue_forecasting/
 │   ├── 03_feature_engineering.ipynb
 │   ├── 04_baseline_and_time_series.ipynb
 │   ├── 05_ml_models.ipynb
-│   ├── 06_ab_testing_and_scenario_analysis.ipynb
+│   ├── 06_statistical_testing_and_ab_style_analysis.ipynb
 │   └── 07_dashboard_and_business_recommendation.ipynb
 │
 ├── src/
